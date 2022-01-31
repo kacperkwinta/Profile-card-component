@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +15,102 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: $dark-cyan !important;
+  background: url(/dist/images/bg-pattern-top.svg) no-repeat no-repeat top -30rem left -5rem,
+    url(/dist/images/bg-pattern-bottom.svg) no-repeat no-repeat top 40rem right -5rem;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper {
+  background: white;
+  max-width: 37.5rem;
+  text-align: center;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 5rem -1rem hsla(197, 84%, 20%, 0.5);
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+.wrapper__profile {
+  position: absolute;
+  border-radius: 50%;
+  border: 0.5rem solid white;
+  width: 9rem;
+  left: 12.5rem;
+  bottom: 21rem;
+}
+
+.wrapper__header {
+  font-size: 1.8rem;
+  margin-top: 7rem;
+  color: $very-dark-desaturated-blue;
+
+  span {
+    margin-left: 1rem;
+    color: $dark-grayish-blue;
+    font-weight: 400;
+  }
+}
+
+.wrapper__paragraph {
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: $dark-grayish-blue;
+}
+
+.wrapper__statistics {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.1rem solid rgba(128, 128, 128, 0.2);
+}
+
+.stats__container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.stats__container-number {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: $very-dark-desaturated-blue;
+}
+
+.stats__container-text {
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2rem;
+  color: $dark-gray;
+}
+
 .attribution {
+  margin: 1.5rem 0;
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+  transition: 0.2s;
+
+  &:hover {
+    color: $very-dark-desaturated-blue;
+  }
 }
