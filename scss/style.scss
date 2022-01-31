@@ -17,9 +17,9 @@ html {
 
 body {
   background-color: $dark-cyan !important;
-  background: url("../dist/images/bg-pattern-top.svg") no-repeat no-repeat top -30rem
+  background: url(/dist/images/bg-pattern-top.svg) no-repeat no-repeat top -30rem
       left -5rem,
-    url("../dist/images/bg-pattern-bottom.svg") no-repeat no-repeat top 40rem
+    url(/dist/images/bg-pattern-bottom.svg) no-repeat no-repeat top 40rem
       right -5rem;
   background-size: contain;
   display: flex;
@@ -33,15 +33,15 @@ body {
 @media (max-width: 375px) {
   body {
     background-color: $dark-cyan;
-    background: url("../dist/images/bg-pattern-top.svg") no-repeat no-repeat top -62rem
+    background: url(/dist/images/bg-pattern-top.svg) no-repeat no-repeat top -62rem
         left -70rem,
-      url("../dist/images/bg-pattern-bottom.svg") no-repeat no-repeat top 30rem
+      url(/dist/images/bg-pattern-bottom.svg) no-repeat no-repeat top 30rem
         right -75rem;
   }
 }
 
 .wrapper {
-  background-image: url("../dist/images/bg-pattern-card.svg");
+  background-image: url(/dist/images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
