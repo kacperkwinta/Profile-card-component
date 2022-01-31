@@ -17,8 +17,10 @@ html {
 
 body {
   background-color: $dark-cyan !important;
-  background: url(/dist/images/bg-pattern-top.svg) no-repeat no-repeat top -30rem left -5rem,
-    url(/dist/images/bg-pattern-bottom.svg) no-repeat no-repeat top 40rem right -5rem;
+  background: url("/dist/images/bg-pattern-top.svg") no-repeat no-repeat top -30rem
+      left -5rem,
+    url("/dist/images/bg-pattern-bottom.svg") no-repeat no-repeat top 40rem
+      right -5rem;
   background-size: contain;
   display: flex;
   align-items: center;
